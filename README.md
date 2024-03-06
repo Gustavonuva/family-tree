@@ -23,7 +23,6 @@ Para instalar e executar o projeto localmente, siga estas etapas:
    ```bash
    git clone https://github.com/Gustavonuva/family-tree.git
    ```
-````
 
 2. Navegue até o diretório do projeto:
 
