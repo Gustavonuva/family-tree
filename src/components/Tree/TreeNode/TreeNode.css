@@ -1,0 +1,27 @@
+.tree-node {
+  border: 0;
+  list-style: none;
+}
+
+.tree-toggler {
+  display: inline;
+}
+
+.tree-head {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+
+.tree-content {
+  display: flex;
+}
+
+.tree-dropdown-toggle {
+  display: inline;
+}
+.tree-list-ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }

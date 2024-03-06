@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { useAuth } from "./AuthContext";
+import Login from "./components/Login/Login";
+import TreeList from "./components/TreeList/TreeList";
 
 function App() {
+  const { isAuthenticated, logout } = useAuth();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      {isAuthenticated ? (
+        <div
+          style={{ background: "linear-gradient(to right, #a0e6ff, #bdfbc6" }}
         >
-          Learn React
-        </a>
-      </header>
+          <button onClick={logout} className="logout-button">
+            Logout
+          </button>
+          <TreeList />
+        </div>
+      ) : (
+        <Login />
+      )}
     </div>
   );
 }
