@@ -1,4 +1,3 @@
-````markdown
 # Documentação do Projeto
 
 Este é um guia de documentação para o projeto TreeList, que é uma aplicação web para gerenciamento de pastas e subpastas.
